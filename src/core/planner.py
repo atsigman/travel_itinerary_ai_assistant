@@ -49,8 +49,10 @@ class TravelPlanner:
             raise CustomException("Failed to set interests", e)
 
     def create_itinerary(self) -> str:
-        logger.info(f"Generating itinerary for {self.n_days} days in {self.city} "
-                    f"for the following interests: {self.interests}")
+        logger.info(
+            f"Generating itinerary for {self.n_days} days in {self.city} "
+            f"for the following interests: {self.interests}"
+        )
 
         try:
             self.itinerary = generate_itinerary(self.n_days, self.city, self.interests)
