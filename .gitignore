@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+logs/
+ai_travel_agent.egg-info/
+.env
+.DS_Store
+
